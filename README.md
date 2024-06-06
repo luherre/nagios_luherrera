@@ -17,4 +17,12 @@ docker build -t NOMBRE .
 ```
 docker run -it -d -p 0.0.0.0:80:80 NOMBRE
 ```
-
+#Acceso a nagios TUIP es la ip de tu servidor.
+```
+http://TUIP/nagios
+```
+#Credenciales
+```
+user: nagiosadmin
+pass: duoc.2024
+```
