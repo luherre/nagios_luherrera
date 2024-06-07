@@ -1,16 +1,16 @@
-#Este contenedor esta basado en la imagen de DEBIAN.
-#Lo primero que hará el DOCKERFILE será actualizar los repositorios,
-#Luego instalara los paquetes necesarios para lanzar NAGIOS.
-#Descargara el NAGIOS CORE dentro de /tmp.
-#Extraera el archivo y comenzará compilando NAGIOS.
-#Una vez compilado lo instalará utrilizando apache2 como usuario instalador.
-#Agregara al usuario nagios al grupo de apache2 (www-data).
-#Terminara instalando los ultimos detalles y actualizará la configuracion de apache para que publique /nagios
-#Creara el usuario nagiosadmin con contraseña duoc.2024 (puedes modificar esto a tu gusto)
-#Al terminar con nagios realizará la instalación de los plugins para poder monitorear su propio host.
-#Creara un archivo llamado "start_service.sh" para iniciar los servicios de nagios y apache siempre que inicie el contenedor.
-#Expondra el contenedor al puerto 80.
-#Y generará un inicio de "start_service.sh" cada vez que se inicie el contenedor.
+Este contenedor esta basado en la imagen de DEBIAN.
+Lo primero que hará el DOCKERFILE será actualizar los repositorios,
+Luego instalara los paquetes necesarios para lanzar NAGIOS.
+Descargara el NAGIOS CORE dentro de /tmp.
+Extraera el archivo y comenzará compilando NAGIOS.#
+Una vez compilado lo instalará utrilizando apache2 como usuario instalador.
+Agregara al usuario nagios al grupo de apache2 (www-data).
+Terminara instalando los ultimos detalles y actualizará la configuracion de apache para que publique /nagios
+Creara el usuario nagiosadmin con contraseña duoc.2024 (puedes modificar esto a tu gusto)
+Al terminar con nagios realizará la instalación de los plugins para poder monitorear su propio host.
+Creara un archivo llamado "start_service.sh" para iniciar los servicios de nagios y apache siempre que inicie el contenedor.
+Expondra el contenedor al puerto 80.
+Y generará un inicio de "start_service.sh" cada vez que se inicie el contenedor.
 
 ##GUIA RAPIDA DE DESPLIEGUE.
 #Descarga:
